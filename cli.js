@@ -1,11 +1,11 @@
 //Command Line Interface - Interfaz de Línea de Comando
-const mdlinks = require('./index.js');
+const {mdlinks} = require('./index.js');
 const pathLib = require('path')
 const path = process.argv[2];
 let firstOption = process.argv[3];
 let secondOption = process.argv[4];
+//Cambio de ruta relativa a absoluta
 let dirPath = pathLib.resolve(path);
-console.log(dirPath);
 
 let options = {
     validate: false,
@@ -29,10 +29,8 @@ if (
     options.stats = false;
 }
 
-// let data = '';
-mdlinks.mdlinks(dirPath, options)
-.then(file => {
-    console.log(file);
-})
-.catch(err => console.log('error', err));
-
+mdlinks(dirPath,options)
+    .then(file => {
+        console.log(file);
+    })
+    .catch(err => console.log('error', err));

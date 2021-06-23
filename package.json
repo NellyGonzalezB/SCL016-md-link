@@ -3,5 +3,26 @@
   "version": "0.1.0",
   "dependencies": {
     "node-fetch": "^2.6.1"
-  }
+  },
+  "description": "## Índice",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "jest": "^27.0.4"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NellyGonzalezB/SCL016-md-link.git"
+  },
+  "author": "Nelly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NellyGonzalezB/SCL016-md-link/issues"
+  },
+  "homepage": "https://github.com/NellyGonzalezB/SCL016-md-link#readme"
 }
